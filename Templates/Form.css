@@ -11,11 +11,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(https://i.pinimg.com/originals/a5/fa/b7/a5fab706a5f27715f1e3ee477412b60b.jpg);  
+    background-image: url(https://www.surveylegend.com/wordpress/wp-content/themes/sage/resources/images/img/modal/upgrade-file-upload.png);  
 }
 
 .container {
-    background-color: rgb(12, 8, 8);
+    background-color: rgb(255, 255, 255,0.5);
     color:white;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
@@ -26,7 +26,7 @@ body {
 .form {
     display: flex;
     flex-direction: column;
-    color: white;
+    color: black;
 }
 
 h2 {
@@ -42,6 +42,49 @@ label {
     margin-bottom: 5px;
 }
 
+.full-width-button {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #2196F3; /* Blue background */
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    width: 100%; /* Full width */
+    height: 100px;
+    border: none;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.full-width-button:hover {
+    background-color: #1976D2; /* Darker blue on hover */
+}
+
+.file-status {
+    display: block;
+    margin-top: 5px;
+    color: #666; /* Grey color for the status message */
+    font-size: 14px; /* Font size */
+}
+
+.upload-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: #2196F3; /* Blue background */
+    color: white;
+    padding: 10px;
+    height: 100px;
+    border-radius: 4px;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.upload-icon:hover {
+    background-color: #1976D2; /* Darker blue on hover */
+}
+
 input[type="file"],
 input[type="password"],
 textarea {
@@ -52,7 +95,7 @@ textarea {
 }
 
 input[type="file"] {
-    border: none;
+    display:none;
 }
 
 button {

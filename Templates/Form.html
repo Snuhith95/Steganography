@@ -11,8 +11,16 @@
         <form class="form" method="post" enctype="multipart/form-data" action="/upload">
             <h2>Upload Your Files</h2>
             <div class="form-group">
-                <label for="file-upload">Upload Image (PNG, JPG, JPEG):</label>
-                <input type="file" id="file-upload" accept=".png, .jpg, .jpeg" name="image" required>
+                <!-- SVG wrapped inside a label to trigger file upload -->
+                <label for="file-upload" class="upload-icon">
+                    <!-- SVG for cloud upload icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="40" height="40">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                    </svg>
+                    <span>Choose Image (PNG, JPG, JPEG)</span>
+                </label>
+                <input type="file" id="file-upload" accept=".png, .jpg, .jpeg" required>
+                <span id="file-status" class="file-status">No file chosen</span> <!-- Status message -->
             </div>
             <div class="form-group">
                 <label for="password">Password:</label>
@@ -25,5 +33,6 @@
             <button type="submit">Submit</button>
         </form>
     </div>
+    <script src="script.js"></script> <!-- Link to the JavaScript file -->
 </body>
 </html>
